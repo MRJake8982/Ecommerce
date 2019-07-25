@@ -7,5 +7,7 @@
 <h1>Nombre:{{$articulo->nombre}}</h1>
 
 <h1>plataforma:{{$articulo->Plataforma}}</h1>
+<h1>Precio:{{$articulo->precio}}</h1>
+
 
 @endsection
