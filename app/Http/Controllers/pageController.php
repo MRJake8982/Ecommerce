@@ -31,5 +31,23 @@ class pageController extends Controller
  	return view('articulos.detalle',compact('articulo'));
 
  }
+   public function crear(Request $request)
+ {
+ 	//return $request->all();
+ 	$articuloNuevo= new App\Articulo;
+ 	$articuloNuevo->nombre=$request->nombre;
+ 	$articuloNuevo->sku=$request->SKU;
+ 	$articuloNuevo->descripcion=$request->descripcion;
+ 	$articuloNuevo->Plataforma=$request->plataforma;
+ 	$articuloNuevo->desarrolladora=$request->desarrolladora;
+ 	$articuloNuevo->idioma=$request->idioma;
+ 	$articuloNuevo->precio=$request->precio;
+ 	$articuloNuevo->estado="Disponible";
+ 	$articuloNuevo->ruta=$request->ruta;
+
+ 	
+ 	$articuloNuevo->save();
+ 	return back();
+ }
 
 }

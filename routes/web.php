@@ -15,6 +15,8 @@ Route::get('/','pageController@inicio' )->name('inicio');
 
 Route::get('loggin','pageController@login')->name('loggin');
 
+Route::post('admin/detalle/','pageController@crear')->name('articulo.crear');
+
 Route::get('produto', function () {
     return view('producto');
 })->name('producto');

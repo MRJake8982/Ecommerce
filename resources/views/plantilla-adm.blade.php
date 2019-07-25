@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title> tutilo</title>
+    <title> CrossXgame</title>
   </head>
   <body>
 <div class="container" style="padding-top: 10px; text-align: right;">
@@ -26,7 +26,7 @@
 </div>
   </nav>
 </div>
-    
+
     <div class="container">
     @yield('seccion-adm')
   </div>

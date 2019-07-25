@@ -2,9 +2,39 @@
 
 @section('seccion-adm')
 <div class="container"> 
-<form action="">
-   
-   
+<form method="POST" action="{{route('articulo.crear')}}">
+  @csrf
+   <label for="inputNombre">Nombre Juego</label>
+      <input type="text" class="form-control" required="true" name="nombre" id="inputText" placeholder="Nombre del Juego">
+
+      <label for="inputSku">sku</label>
+      <input type="text" class="form-control" name="SKU" required="true" id="inputSku" placeholder="Ingresar SKU">
+
+
+  
+    <label for="inputDescripcion">Descripcion</label>
+    <input required="true" type="text" class="form-control" name="descripcion" id="inputDes" placeholder="Ingrese Descripcion">
+  
+  
+  
+      <label for="inputPlat">Plataforma</label>
+      <input type="text" required="true" class="form-control" name="plataforma" id="inputCity" placeholder="ps4,ps3,xbox 360, xbox one, etc">
+  
+  
+    <label for="inputDesarrolladora">Desarrolladora</label>
+    <input type="text" required="true" class="form-control" name="desarrolladora" id="inputAddress2" placeholder="Ingrese desarrolladora">
+  
+  
+    <label for="inputPrecio">Precio</label>
+    <input type="text" class="form-control" required="true" name="precio" id="inputAddress2" placeholder="Ingrese Precio">
+
+      <label for="inputIdioma">Idioma</label>
+     <input type="text" name="idioma" class="form-control" required="true" id="inputIdioma" placeholder="Idioma 1, Idioma 2, Idioma 3">
+  
+ 
+  
+  <button type="submit" class="btn btn-primary">Crear</button>
+  <button type="clear" class="btn btn-secundary">limpiar</button>
 </form>
 
 </div>
