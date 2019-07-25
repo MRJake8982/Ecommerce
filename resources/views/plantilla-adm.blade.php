@@ -11,6 +11,22 @@
     <title> tutilo</title>
   </head>
   <body>
+<div class="container" style="padding-top: 10px; text-align: right;">
+  
+  <nav >
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sesion
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Mis datos</a>
+    <a class="dropdown-item" href="#">Cerrar sesion</a>
+  
+  </div>
+</div>
+  </nav>
+</div>
+    
     <div class="container">
     @yield('seccion-adm')
   </div>
