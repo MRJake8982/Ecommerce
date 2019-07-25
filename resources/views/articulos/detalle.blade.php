@@ -1,6 +1,6 @@
-@extends('plantilla-adm')
+@extends('plantilla-web')
 
-@section('seccion-adm')
+@section('seccion-web')
 <div class="container">
 <h1 >id:{{$articulo->id}}</h1>
 

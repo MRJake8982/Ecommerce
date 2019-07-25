@@ -22,6 +22,8 @@ class CreateArticulosTable extends Migration
             $table->string('desarrolladora');
             $table->string('idioma');
             $table->integer('precio');
+            $table->string('estado');
+            $table->string('ruta');
             $table->timestamps();
         });
     }

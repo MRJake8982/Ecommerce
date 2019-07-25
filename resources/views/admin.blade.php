@@ -1,7 +1,13 @@
 @extends('plantilla-adm')
 
 @section('seccion-adm')
+<div class="container"> 
+<form action="">
+   
+   
+</form>
 
+</div>
 
 <div class="container" style="padding: 2%">
  <table class="table table-striped table-dark">
